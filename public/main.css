@@ -1,0 +1,21 @@
+body {
+	padding: 0 2em;
+}
+
+.editor {
+	display: flex;
+}
+
+.editor-menu {
+	display: inline-block;
+	width: 15em;	
+}
+.editor-menu > * {
+	width: inherit;
+}
+
+.editor-form {
+	padding-left: 1em;
+	width: calc(100% - 15em);
+	max-width: 60em;
+}

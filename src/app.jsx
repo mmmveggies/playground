@@ -1,9 +1,14 @@
-var React = require("react");
+import React from 'react';
+import AdminHeader from './admin-header.jsx';
+import UserEditor from './user-editor.jsx';
 
-var App = React.createClass({
+export default class App extends React.Component {
     render() {
-        return <h1>Hello change</h1>;
+        return (
+			<div>
+				<AdminHeader username="test@echostar.com"/>
+				<UserEditor />
+			</div>
+		);
     }
-})
-
-React.render(<App/>, document.getElementById('example'));
+}
