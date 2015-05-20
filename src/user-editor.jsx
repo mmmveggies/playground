@@ -1,11 +1,12 @@
 import React from 'react';
 import { Panel, Nav, NavItem, Well } from 'react-bootstrap';
 import AdminHeader from './admin-header.jsx';
-import RelevanceForm from './relevance-form.jsx';
+import UserCreateForm from './user-create-form.jsx';
+import UserEditForm from './user-edit-form.jsx';
 
 var items = {
-	'Add User': <RelevanceForm/>,
-	'Edit Users': "adsf",
+	'Add User': <UserCreateForm />,
+	'Edit Users': <UserEditForm />, 
 	'Delete Users': "adsf",
 	'Add Group': "adsf",
 	'Edit Groups': "adsf",
