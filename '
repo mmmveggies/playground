@@ -1,0 +1,39 @@
+import React from 'react';
+import InputExt from './input-ext.jsx';
+
+const emailSelectMulti = {
+	type: 'select',
+	label: 'User',
+	hasFeedback: true
+}
+
+const receiverInput = {
+	type: 'textarea',
+	label: 'Receiver IDs',
+	placeholder: 'Comma separated, e.g. 1884253467,1820396387',
+	hasFeedback: true
+}
+
+const isAdminInput = {
+	type: 'checkbox',
+	label: 'Is Admin'
+}
+
+const submitInput = {
+	type: 'submit',
+	value: 'Confirm Changes'
+}
+
+export default class UserEditForm extends React.Component {
+
+	render() {
+		return (
+			<form className='form-horizontal'>
+				<InputExt {...emailSelectMulti} />
+				<InputExt {...receiverInput} />
+				<InputExt {...isAdminInput} />
+				<InputExt {...submitInput} />
+			</form>
+		);
+	}
+}
